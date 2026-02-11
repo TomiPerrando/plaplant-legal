@@ -26,6 +26,36 @@ body {
   padding: 24px 16px 56px;
 }
 
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.lang-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 12px;
+  line-height: 1;
+}
+
+.lang-btn.active {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
 header {
   margin-bottom: 24px;
 }
@@ -80,7 +110,8 @@ a {
   font-weight: 600;
 }
 
-ul {
+ul,
+ol {
   padding-left: 18px;
 }
 
@@ -94,4 +125,12 @@ hr {
   margin-top: 28px;
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+html[lang="en"] .lang-es {
+  display: none;
+}
+
+html[lang="es"] .lang-en {
+  display: none;
 }

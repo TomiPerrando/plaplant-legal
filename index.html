@@ -1,37 +1,67 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Plaplant Legal</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body data-title-en="Plaplant Legal" data-title-es="Plaplant Legal">
     <main class="container">
+      <div class="topbar">
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn" type="button" data-lang-button="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" type="button" data-lang-button="es" aria-pressed="false">ES</button>
+        </div>
+      </div>
+
       <header>
         <h1>Plaplant Legal</h1>
-        <p class="meta">Documentacion publica para Google Play y usuarios de la app.</p>
+        <p class="meta">
+          <span class="lang-en">Public legal documents for Google Play and app users.</span>
+          <span class="lang-es">Documentacion legal publica para Google Play y usuarios de la app.</span>
+        </p>
       </header>
 
       <section class="grid">
         <article class="card">
           <h2>Privacy Policy</h2>
-          <p>Describe que datos procesa Plaplant, para que se usan y con quien se comparten.</p>
-          <a class="cta" href="./privacy-policy/">Ver politica de privacidad</a>
+          <p>
+            <span class="lang-en">Describes what data Plaplant processes, how it is used, and who it is shared with.</span>
+            <span class="lang-es">Describe que datos procesa Plaplant, para que se usan y con quien se comparten.</span>
+          </p>
+          <a class="cta" href="./privacy-policy/">
+            <span class="lang-en">View privacy policy</span>
+            <span class="lang-es">Ver politica de privacidad</span>
+          </a>
         </article>
 
         <article class="card">
-          <h2>Eliminacion de cuenta</h2>
-          <p>Explica como solicitar el borrado de cuenta y datos asociados.</p>
-          <a class="cta" href="./account-deletion/">Ver instrucciones</a>
+          <h2>
+            <span class="lang-en">Account Deletion</span>
+            <span class="lang-es">Eliminacion de cuenta</span>
+          </h2>
+          <p>
+            <span class="lang-en">Explains how to request account and associated data deletion.</span>
+            <span class="lang-es">Explica como solicitar el borrado de cuenta y datos asociados.</span>
+          </p>
+          <a class="cta" href="./account-deletion/">
+            <span class="lang-en">View instructions</span>
+            <span class="lang-es">Ver instrucciones</span>
+          </a>
         </article>
       </section>
 
       <p class="footer">
-        Operador: <strong>Tomas Perrando (DataTomi)</strong><br />
-        Contacto: <a href="mailto:plaplantchat@gmail.com">plaplantchat@gmail.com</a>
+        <span class="lang-en">Operator:</span>
+        <span class="lang-es">Operador:</span>
+        <strong>Tomas Perrando (DataTomi)</strong><br />
+        <span class="lang-en">Contact:</span>
+        <span class="lang-es">Contacto:</span>
+        <a href="mailto:plaplantchat@gmail.com">plaplantchat@gmail.com</a>
       </p>
     </main>
+
+    <script src="./lang-switch.js"></script>
   </body>
 </html>
-
